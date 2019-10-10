@@ -19,8 +19,10 @@ public class Publisher {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
     @NonNull
     private String name;
+
     @NonNull
     private String address;
 

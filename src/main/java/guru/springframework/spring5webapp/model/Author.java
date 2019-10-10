@@ -16,10 +16,13 @@ public class Author {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
     @NonNull
     private String firstName;
+
     @NonNull
     private String lastName;
+
     @ManyToMany(mappedBy = "authors")
     private Set<Book> books = new HashSet<>();
 
